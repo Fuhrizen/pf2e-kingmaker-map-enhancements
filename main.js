@@ -130,7 +130,7 @@ Hooks.on('init', function () {
         name: "Hex Color - Reconnoitered",
         label: "Color Picker",
         restricted: false,
-        defaultColor: "#00ff0026",
+        defaultColor: "#cf860c66",
         scope: "client",
         onChange: (value) => {
             game.coloredAndIconsLayer?.draw()
@@ -141,7 +141,7 @@ Hooks.on('init', function () {
         name: "Hex Color - Mapped",
         label: "Color Picker",
         restricted: false,
-        defaultColor: "#0000ff26",
+        defaultColor: "#0d3a905c",
         scope: "client",
         onChange: (value) => {
             game.coloredAndIconsLayer?.draw()
@@ -152,7 +152,7 @@ Hooks.on('init', function () {
         name: "Hex Color - Claimed",
         label: "Color Picker",
         restricted: false,
-        defaultColor: "#ff000026",
+        defaultColor: "#e4ed4d67",
         scope: "client",
         onChange: (value) => {
             game.coloredAndIconsLayer?.draw()
@@ -174,7 +174,7 @@ Hooks.on('init', function () {
         name: "Hex Color - Cleared",
         label: "Color Picker",
         restricted: false,
-        defaultColor: "#36e33215",
+        defaultColor: "#4e9f0c49",
         scope: "client",
         onChange: (value) => {
             game.coloredAndIconsLayer?.draw()
