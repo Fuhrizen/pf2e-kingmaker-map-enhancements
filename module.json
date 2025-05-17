@@ -1,0 +1,61 @@
+{
+  "id": "pf2e-kingmaker-map-enhancements",
+  "title": "Pf2e Kingmaker Map Enhancements",
+  "description": "",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Reyzor",
+      "url": "https://www.patreon.com/Reyzor1991",
+      "discord": "reyzor1991"
+    },
+    {
+      "name": "Fuhrizen",
+      "url": "https://github.com/Fuhrizen",
+      "discord": "fuhrizen"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "esmodules": [
+    "main.js"
+  ],
+  "styles": [
+    "main.css"
+  ],
+  "packFolders": [],
+  "packs": [],
+  "compatibility": {
+    "minimum": "12.343",
+    "verified": "13.342"
+  },
+  "socket": true,
+  "url": "https://github.com/Fuhrizen/pf2e-kingmaker-map-enhancements",
+  "manifest": "https://github.com/Fuhrizen/pf2e-map-enhancements/releases/latest/download/module.json",
+  "download": "https://github.com/Fuhrizen/pf2e-map-enhancements/releases/latest/download/module.zip",
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "manifest": "https://github.com/foundryvtt/pf2e/releases/latest/download/system.json",
+        "compatibility": {
+          "minimum": "6.12.1",
+          "verified": "7.0.6"
+        }
+      }
+    ],
+    "requires": [
+      {
+        "id": "colorsettings",
+        "type": "module",
+        "manifest": "https://raw.githubusercontent.com/ardittristan/VTTColorSettings/master/module.json"
+      }
+    ]
+  }
+}
