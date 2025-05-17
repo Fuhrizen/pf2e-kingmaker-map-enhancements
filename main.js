@@ -174,7 +174,7 @@ Hooks.on('init', function () {
         name: "Hex Color - Cleared",
         label: "Color Picker",
         restricted: false,
-        defaultColor: "##36e33215",
+        defaultColor: "#36e33215",
         scope: "client",
         onChange: (value) => {
             game.coloredAndIconsLayer?.draw()
