@@ -170,6 +170,17 @@ Hooks.on('init', function () {
         },
         // insertAfter: "myModule.mySetting"
     })
+    new window.Ardittristan.ColorSetting(moduleName, "clearedHexColor", {
+        name: "Hex Color - Cleared",
+        label: "Color Picker",
+        restricted: false,
+        defaultColor: "##36e33215",
+        scope: "client",
+        onChange: (value) => {
+            game.coloredAndIconsLayer?.draw()
+        },
+        // insertAfter: "myModule.mySetting"
+    })
     game.settings.register(moduleName, "widthPolygon", {
         name: "Thickness of outline around the hex",
         scope: "client",
@@ -261,6 +272,7 @@ class ColoredAndIconsLayer extends PIXI.Container {
         this.#drawColorByType(g, h => h.exploration === 1 && !h.claimed, getColor("reconnoiteredHexColor"));
         this.#drawColorByType(g, h => h.exploration === 2 && !h.claimed, getColor("mappedHexColor"));
         this.#drawColorByType(g, h => h.claimed, getColor("claimedHexColor"));
+        this.#drawColorByType(g, h => h.cleared, getColor("clearedHexColor"));
         if (game.modules.get("pf2e-kingmaker-tools")?.active) {
             let kingdom = game.actors.party.getFlag("pf2e-kingmaker-tools", "kingdom-sheet");
             if (kingdom) {
